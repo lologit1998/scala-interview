@@ -1,0 +1,55 @@
+I.	Explain REST and RESTful?
+
+REST stands for Representational State Transfer. It is a Web Development architecture for building Web application.  All application respecting this architecture are called RESTful.
+
+The principles of this architecture are as followed:
+-	Addressability: Resources are identified by URIs manipulated through their representations. 
+-	Uniformity of interfaces: Every request starts with a verb based on HTTP methods (GET, PUT, POST, DELETE).
+-	Stateless communication: No status management on the server side, which means no sessions, no cookies, all request must have the right information’s in order to be treated
+
+The advantages are that:
+-	The server is answering simple requests to retrieve, create, update or delete a resource.
+-	The server is little solicited.
+-	The URIS are rewritten to name the resources more naturally.
+-	The REST architecture is "stateless".
+
+The disadvantages are that:
+- Requires a server capable of considering this architecture.
+- Increases the load on the client who must build the visual rendering.
+- Increases the client-side code.
+
+II.	 Explain the architectural style for the creation of a web API (client server communication, formatting language, etc.)?
+
+The client will send an HTTP request. The API will treat this request. It will search the data in the database and send it back to the client.
+
+
+III.	Explain HTTP requests types when used with RESTful web (GET, PUT, POST, etc.)
+
+The method GET is for getting a resource. 
+The method POST is for creating a resource.
+The method PUT is for updating a resource.
+The method DELETE is for deleting a resource.
+
+Here is an example of a method:
+	
+GET http://localhost/php/request.php/polls/?login=tibo&delay=10d
+
+In this method, we are getting all polls of the user « tibo » that are less than 10 days old.
+
+IV.	Explain the difference between stateless and stateful protocol. Which type of protocol is HTTP?
+
+A stateless protocol will not register the session on the server at the end of a request. 
+A stateful protocol will in contrast register the session on the server. 
+HTTP is a stateless protocol.
+
+V.	Explain the difference between a GET and a POST (like how are sent the parameters)
+
+POST http://localhost/php/request.php/polls/login=tibo&title=s1
+
+GET http://localhost/php/request.php/polls
+
+In the POST request, the user “tibo” will create a poll called s1. Then with the GET request we will show all the polls that are already existing.
+
+VI.	You can’t work out how to solve a coding problem. What do you do to find the answer?
+
+When I have a coding a problem, I document myself a lot, I look on websites if people had the same problems as me (Stack Overflow) and if I really can’t find a solution, I will try to ask someone. I always prefer to find the solution by myself because I think it is more rewarding.
